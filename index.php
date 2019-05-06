@@ -24,7 +24,6 @@ $result = mysqli_query($conect,$sql);
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/animate.css">
-
     <title>Noche</title>
 </head>
 
