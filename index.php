@@ -25,7 +25,7 @@ $result = mysqli_query($conect,$sql);
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/animate.css">
 
-    <title> Ballena</title>
+    <title>AquaSyncs</title>
 </head>
 
 <body class="scroll">
