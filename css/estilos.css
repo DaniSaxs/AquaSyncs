@@ -927,7 +927,6 @@ font-family: 'Montserrat', sans-serif;
 
 .infoR{
     width: 20%;
-    height: 350px;
     background: white;
     position: absolute;
     left: 75%;
@@ -1064,19 +1063,19 @@ font-family: 'Montserrat', sans-serif;
 .cont1_1{
     width: 200px;
     height: 350px;
-    background-image: url(../img/annette.png);
+    background-image: url(../img/animacionA.png);
     margin-top: 40px;
-    /*background-position: left top;
-    animation: mover_1 5s steps(64) infinite;
-    animation-play-state: paused;
+    background-position: left top;
+    animation: mover_1 5s steps(100) infinite;
+    animation-play-state: running;
     
 }
 
 @keyframes mover_1{
     
     100%{
-        background-position: -12800px top;
-    }*/
+        background-position: -20000px top;
+    }
 }
 
 .boton1_1{
@@ -1392,7 +1391,6 @@ font-family: 'Montserrat', sans-serif;
 
 .infoR_1{
     width: 20%;
-    height: 350px;
     background: white;
     position: absolute;
     left: 75%;
@@ -1769,7 +1767,6 @@ font-family: 'Montserrat', sans-serif;
 
 .infoR_2{
     width: 20%;
-    height: 350px;
     background: white;
     position: absolute;
     left: 75%;
@@ -2156,7 +2153,6 @@ font-family: 'Montserrat', sans-serif;
 
 .infoR_3{
     width: 20%;
-    height: 350px;
     background: white;
     position: absolute;
     left: 75%;
@@ -2544,7 +2540,6 @@ font-family: 'Montserrat', sans-serif;
 
 .infoR_4{
     width: 20%;
-    height: 360px;
     background: white;
     position: absolute;
     left: 75%;
@@ -2932,7 +2927,6 @@ font-family: 'Montserrat', sans-serif;
 
 .infoR_5{
     width: 20%;
-    height: 350px;
     background: white;
     position: absolute;
     left: 75%;
@@ -3070,7 +3064,7 @@ font-family: 'Montserrat', sans-serif;
     color: white;
     top: 230px;
     margin: 3%;
-    margin-left: 50px;
+    margin-left: 10px;
     text-align:center;
     text-shadow: 0px 0px 10px 0px red;
     transition: 0.5s ease-out;
@@ -3319,7 +3313,6 @@ font-family: 'Montserrat', sans-serif;
 
 .infoR_6{
     width: 20%;
-    height: 350px;
     background: white;
     position: absolute;
     left: 75%;
@@ -3354,7 +3347,11 @@ font-family: 'Montserrat', sans-serif;
     
     width: 100%;
     height: 100vh;
-    background: #5fc3eb;
+    background-image: url(../img/texture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #5fc3eb;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3363,6 +3360,7 @@ font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     text-align: center;
     box-sizing: border-box;
+    transition: 0.5s ease-out;
 }
 
 .sectimg{

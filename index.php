@@ -44,7 +44,7 @@ $result = mysqli_query($conect,$sql);
     <div class="nosotroslight animated bounceInDown"><h3 class="nosoli">¿Qué<br>somos?</h3></div>
     <div class="nostig"><div class="firstnos"><h3 class="nostigtext">AquaSyncs</h3><p class="nostigpar">AquaSyncs es un proyecto sobre el nado sincronizado con el objetivo de informar al usuario acerca de la historia de este deporte. Esta página se presenta en forma de Timeline en la que se muestra la cronología del nado sincronizado.
     Nosotros queremos lograr que los usuarios que naveguen por nuestra página, aprendan y se animen a conocer más sobre este deporte.</p><h3 class="advertext">(Presiona en cualquier parte para cerrar)</h3></div><div class="imgnos1"><img src="img/noslight_1.jpg" width="1280px" height="740px"></div></div>
-    <div class="us animated jello infinite">
+    <div class="us">
         <i class="flecha fas fa-arrow-right"></i>
         <i style="display: none" class="flecha fas fa-arrow-left"></i>
     </div>
@@ -125,7 +125,7 @@ $result = mysqli_query($conect,$sql);
                     </div>
                 </div>
                 <div class="infoR_6">
-                    <h3 class="infotext1_6">"Introducción a los Juegos Olímpicos"</h3><h6 class="infotext2_6"> soy Claudia, y mi pasión siempre fue la natación...Desde niña he perseverado hasta llegar aquí, y gracias a la oportunidad de entrar con mi equipo, por el trabajo árduo, y el entrenamiento constante, pude cumplir mi sueño, fue gracias a Annette Kellerman que me inspiré para realizar este deporte, mi mamá me decía de niña que tenía gran talento para la danza y la natación.
+                    <h3 class="infotext1_6">"Introducción a los Juegos Olímpicos"</h3><h6 class="infotext2_6"> Soy Tracie Ruiz, y mi pasión siempre fue la natación...Desde niña he perseverado hasta llegar aquí, y gracias a la oportunidad de entrar con mi equipo, por el trabajo árduo, y el entrenamiento constante, pude cumplir mi sueño, fue gracias a Annette Kellerman que me inspiré para realizar este deporte, mi mamá me decía de niña que tenía gran talento para la danza y la natación.
                     </h6></div>
                 </li>
             </ul>
@@ -308,10 +308,10 @@ $result = mysqli_query($conect,$sql);
             <div class="boton1"></div></div>
 
             <div class="textone_6"><h3 class="enter1_6"><?php echo $row['texto1'] ?></h3></div>
-            <div class="open1_6"><div class="open1box_6"><h3 class="open1boxtext_6">Personaje</h3><p class="open1boxpar_6">Claudia se distingue porque no es egoísta y siempre trata bien a los demás.<br>Pilar es una joven extrovertida y no le gusta ser aburrida. </p><div class="open1img_6"><img src ="img/open_12.jpg" width = "310px" height = "220px"></div></div></div>
+            <div class="open1_6"><div class="open1box_6"><h3 class="open1boxtext_6">Personaje</h3><p class="open1boxpar_6">Tracie Ruiz se distingue porque no es egoísta y siempre trata bien a los demás.<br>Candy Costie es una joven extrovertida y no le gusta ser aburrida. </p><div class="open1img_6"><img src ="img/open_12.jpg" width = "310px" height = "220px"></div></div></div>
 
             <div class="textree_6"><h3 class="enter3_6"><?php echo $row['texto2'] ?></h3></div>
-            <div class="open2_6"><div class="open2box_6"><h3 class="open2boxtext_6">Campeonato</h3><p class="open2boxpar_6"> en los juegos olímpicos de los Angeles-California, estoy en 1984, soy Claudia, y mi pasión siempre fue la natación.</p><div class="open2img_6"><img src ="img/open_13.jpg" width = "330px" height = "170px"></div></div></div></div></section>
+            <div class="open2_6"><div class="open2box_6"><h3 class="open2boxtext_6">Campeonato</h3><p class="open2boxpar_6"> en los juegos olímpicos de los Angeles-California, estoy en 1984, soy Tracie Ruiz, y mi pasión siempre fue la natación.</p><div class="open2img_6"><img src ="img/open_13.jpg" width = "330px" height = "170px"></div></div></div></div></section>
 
 
 
