@@ -111,14 +111,62 @@ $result = mysqli_query($conect,$sql);
                     <h3 class="infotext1_4">"Esther Williams"</h3><h6 class="infotext2_4">En el año 1942, intervine en mi primera película que se llamó “Andy Hardy's Double Life”, donde interpretó el papel de Sheila Brooks, junto a Mickey Rooney y Cecilia Parker.
                     George Sidney me ofreció, en el año 1944, una gran oportunidad en la película Escuela de sirenas, un musical distinto hasta la fecha, ya que tiene como escenario el agua, y es la película con que me comencé a conocer mundialmente.</h6></div>
                 </li>
-                <li class="light2_5">
-                    <div class="gamebox_5"><div class="gameimgshadow6"></div><div class="gameimg6"><img src ="img/infoimg.jpg" width="100%" height="500px"></div>
-                    <div class="arrow_5"><h5 class="arrowtext_5">Espacio para Infografía</h5>
-                    </div>
+
+
+
+            <li class="light2_5">
+                <div class="gamebox_5">
+                    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="false">
+                          <img src="img/infografia_1.jpg" class="d-block w-100" alt="infografia_1.jpg">
+                      </div>
+                      <div class="carousel-item" data-interval="2000">
+                          <img src="img/infografia_2.jpg" class="d-block w-100" alt="infografia_2.jpg">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="img/infografia_3.jpg" class="d-block w-100" alt="infografia_3.jpg">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="img/infografia_4.jpg" class="d-block w-100" alt="infografia_4.jpg">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="img/infografia_5.jpg" class="d-block w-100" alt="infografia_5.jpg">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="img/infografia_6.jpg" class="d-block w-100" alt="infografia_6.jpg">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="img/infografia_7.jpg" class="d-block w-100" alt="infografia_7.jpg">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="img/infografia_8.jpg" class="d-block w-100" alt="infografia_8.jpg">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="img/infografia_9.jpg" class="d-block w-100" alt="infografia_9.jpg">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="img/infografia_10.jpg" class="d-block w-100" alt="infografia_10.jpg">
+                      </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                       
                 </div>
                 <div class="infoR_5">
-                    <h3 class="infotext1_5">"Reglamento"</h3><h6 class="infotext2_5">Finalmente en el año 1955 por un invento que realizó un señor empezó a darle orden a esta disciplina y a exigir muchas cosas porque al ver presentaciones sabía que le hacía falta algo para que tuviera un éxito rotundo en su historia.</h6></div>
-                </li>
+                    <h3 class="infotext1_5">"Reglamento"</h3><h6 class="infotext2_5">Finalmente en el año 1955 por un invento que realizó un señor empezó a darle orden a esta disciplina y a exigir muchas cosas porque al ver presentaciones sabía que le hacía falta algo para que tuviera un éxito rotundo en su historia.</h6>
+                </div>
+             </li>
+
+
+
                 <li class="light2_6">
                     <div class="gamebox_6"><div class="gameimgshadow7"></div><div class="gameimg7"><img src ="img/olympicimg.jpg" width="100%" height="500px"></div>
                     <div class="arrow_6"><h5 class="arrowtext_6">Play</h5>
