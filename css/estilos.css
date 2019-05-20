@@ -1823,18 +1823,18 @@ font-family: 'Montserrat', sans-serif;
 .cont1_3{
     width: 200px;
     height: 350px;
-    background-image: url(../img/ani_K.png);
+    background-image: url(../img/katherine.png);
     margin-top: 40px;
-    background-position: left top;
-    animation: mover_3 5s steps(45) infinite;
+    /*background-position: left top;
+    animation: mover_3 5s steps(64) infinite;
     animation-play-state: paused;
 }
 
 @keyframes mover_3{
     
     100%{
-        background-position: -12516px top;
-    }
+        background-position: -12800px top;
+    }*/
 }
 
 .boton1_3{
@@ -2898,8 +2898,20 @@ font-family: 'Montserrat', sans-serif;
     top: 115px;
 }
 
-
-
+.gameimgshadow6{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    background: black;
+    z-index: 1;
+    opacity: 0.5;
+}
+.gameimg6{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    filter: blur(3px);
+}
 
 .arrow_5{
     width: 100px;
