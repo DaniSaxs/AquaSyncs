@@ -1826,8 +1826,8 @@ font-family: 'Montserrat', sans-serif;
     background-image: url(../img/ani_K.png);
     margin-top: 40px;
     background-position: left top;
-    animation: mover_3 5s steps(45) infinite;
-    animation-play-state: paused;
+    animation: mover_3 5s steps(51) infinite;
+    animation-play-state: running;
 }
 
 @keyframes mover_3{
