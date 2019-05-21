@@ -1823,17 +1823,17 @@ font-family: 'Montserrat', sans-serif;
 .cont1_3{
     width: 200px;
     height: 350px;
-    background-image: url(../img/katherine.png);
+    background-image: url(../img/ani_K.png);
     margin-top: 40px;
-    /*background-position: left top;
-    animation: mover_3 5s steps(64) infinite;
-    animation-play-state: paused;
+    background-position: left top;
+    animation: mover_3 5s steps(51) infinite;
+    animation-play-state: running;
 }
 
 @keyframes mover_3{
     
     100%{
-        background-position: -12800px top;
+        background-position: -12516px top;
     }*/
 }
 
