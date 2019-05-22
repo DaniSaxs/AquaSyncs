@@ -70,9 +70,102 @@ $result = mysqli_query($conect,$sql);
         <div class="arrow"><h5 class="arrowtext">Play</h5></div>
     </div>
     <div class="infoR">
-        <h3 class="infotext1">"En busca del Nado"</h3><h6 class="infotext2">Adalia es una chica de 19 años, obediente, perseverante, perspicaz, inteligente y apasionada en lo que hace, es amigable, alegre, sociable, y decisiva.
+    <?php 
+    $con2 = mysqli_connect('localhost','root','','niveles');
+    $sql2 = "SELECT * FROM nivel_1 ORDER BY score DESC LIMIT 5";
+    $sql3 = "SELECT * FROM nivel_2 ORDER BY score DESC LIMIT 5";
+    $sql4 = "SELECT * FROM nivel_3 ORDER BY score DESC LIMIT 5";
+    $sql5 = "SELECT * FROM nivel_4 ORDER BY score DESC LIMIT 5";
+    $result2 = mysqli_query($con2,$sql2);
+    $result3 = mysqli_query($con2,$sql3);
+    $result4 = mysqli_query($con2,$sql4);
+    $result5 = mysqli_query($con2,$sql5);
+    $idioma2 = mysqli_set_charset($conect,"utf8");
+    ?>
+    <div class="container pt-2 pb-2" style="text-align: center; color: #ff2c2c; font-weight: 600;">Tabla de Marcadores</div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <div class="container pt-2 pb-2" style="text-align: center; background-color: #ff2c2c; color: white; font-weight: 600;">Nivel 1</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col" style="color: #ff2c2c;">Nombre</th>
+                    <th scope="col" style="color: #ff2c2c;">Puntaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php while($row2 = mysqli_fetch_array($result2)){
+                        echo "<tr><td>".$row2['nombre']."</td><td>".$row2['score']."</td></tr>";}
+                    ?>
+                </tbody>
+            </table>
+            </div>
+            <div class="carousel-item">
+            <div class="container pt-2 pb-2" style="text-align: center; background-color: #ff2c2c; color: white; font-weight: 600;">Nivel 2</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col" style="color: #ff2c2c;">Nombre</th>
+                    <th scope="col" style="color: #ff2c2c;">Puntaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php while($row3 = mysqli_fetch_array($result3)){
+                        echo "<tr><td>".$row3['nombre']."</td><td>".$row3['score']."</td></tr>";}
+                    ?>
+                </tbody>
+            </table>
+            </div>
+            <div class="carousel-item">
+            <div class="container pt-2 pb-2" style="text-align: center; background-color: #ff2c2c; color: white; font-weight: 600;">Nivel 3</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col" style="color: #ff2c2c;">Nombre</th>
+                    <th scope="col" style="color: #ff2c2c;">Puntaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php while($row4 = mysqli_fetch_array($result4)){
+                        echo "<tr><td>".$row4['nombre']."</td><td>".$row4['score']."</td></tr>";}
+                    ?>
+                </tbody>
+            </table>
+            </div>
+            <div class="carousel-item">
+            <div class="container pt-2 pb-2" style="text-align: center; background-color: #ff2c2c; color: white; font-weight: 600;">Nivel 4</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col" style="color: #ff2c2c;">Nombre</th>
+                    <th scope="col" style="color: #ff2c2c;">Puntaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php while($row5 = mysqli_fetch_array($result5)){
+                        echo "<tr><td>".$row5['nombre']."</td><td>".$row5['score']."</td></tr>";}
+                    ?>
+                </tbody>
+            </table>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="align-items: flex-start !important; margin-top:6px !important;">
+            <i class="fas fa-angle-left" style="font-size: 30px;"></i>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="align-items: flex-start !important; margin-top:6px !important;">
+            <i class="fas fa-angle-right" style="font-size: 30px;"></i>
+        </a>
+    </div>
+        <!-- <h3 class="infotext1">"En busca del Nado"</h3><h6 class="infotext2">Adalia es una chica de 19 años, obediente, perseverante, perspicaz, inteligente y apasionada en lo que hace, es amigable, alegre, sociable, y decisiva.
             <br>Resulta que alguien le tenía envidia y le hurtó
-            sus implementos del Baile Acuático.<br>Tu misión es ayudar a Adalia a encontrarlos para que pueda prácticar de nuevo sus hermosas rutinas.</h6></div>
+            sus implementos del Baile Acuático.<br>Tu misión es ayudar a Adalia a encontrarlos para que pueda prácticar de nuevo sus hermosas rutinas.</h6> -->
+    </div>
         </li>
         <li class="light2_1">
             <div class="gamebox_1">
@@ -391,7 +484,7 @@ $result = mysqli_query($conect,$sql);
 <script defer src="js/bootstrap.min.js"></script>
 <script defer src="js/bootstrap.bundle.min.js"></script>
 <script defer src="js/jquery.easing.min.js"></script>
-<script defer src="js/jquery.easing.compatibility.min.js"></script>   
+<script defer src="js/jquery.easing.compatibility.min.js"></script>  
 <script src="js/codigo.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/parallax.js"></script>
