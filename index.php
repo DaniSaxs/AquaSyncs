@@ -5,6 +5,15 @@ require "php/conexion.php";
 $sql = "SELECT * FROM secciones";
 $result = mysqli_query($conect,$sql);
 
+    $con2 = mysqli_connect('localhost','root','','niveles');
+    $sql2 = "SELECT * FROM nivel_1 ORDER BY score DESC LIMIT 5";
+    $sql3 = "SELECT * FROM nivel_2 ORDER BY score DESC LIMIT 5";
+    $sql4 = "SELECT * FROM nivel_3 ORDER BY score DESC LIMIT 5";
+    $sql5 = "SELECT * FROM nivel_4 ORDER BY score DESC LIMIT 5";
+    $result2 = mysqli_query($con2,$sql2);
+    $result3 = mysqli_query($con2,$sql3);
+    $result4 = mysqli_query($con2,$sql4);
+    $result5 = mysqli_query($con2,$sql5);
 
 ?>
 
@@ -70,25 +79,8 @@ $result = mysqli_query($conect,$sql);
         <div class="arrow"><h5 class="arrowtext">Play</h5></div>
     </div>
     <div class="infoR">
-    <?php 
-    $con2 = mysqli_connect('localhost','root','','niveles');
-    $sql2 = "SELECT * FROM nivel_1 ORDER BY score DESC LIMIT 5";
-    $sql3 = "SELECT * FROM nivel_2 ORDER BY score DESC LIMIT 5";
-    $sql4 = "SELECT * FROM nivel_3 ORDER BY score DESC LIMIT 5";
-    $sql5 = "SELECT * FROM nivel_4 ORDER BY score DESC LIMIT 5";
-    $result2 = mysqli_query($con2,$sql2);
-    $result3 = mysqli_query($con2,$sql3);
-    $result4 = mysqli_query($con2,$sql4);
-    $result5 = mysqli_query($con2,$sql5);
-    $idioma2 = mysqli_set_charset($conect,"utf8");
-    ?>
     <div class="container pt-2 pb-2" style="text-align: center; color: #ff2c2c; font-weight: 600;">Tabla de Marcadores</div>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
             <div class="container pt-2 pb-2" style="text-align: center; background-color: #ff2c2c; color: white; font-weight: 600;">Nivel 1</div>
