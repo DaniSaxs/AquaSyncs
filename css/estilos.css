@@ -1825,14 +1825,14 @@ font-family: 'Montserrat', sans-serif;
     background-image: url(../img/ani_K.png);
     margin-top: 40px;
     background-position: left top;
-    animation: mover_3 5s steps(51) infinite;
+    animation: mover_3 5s steps(56) infinite;
     animation-play-state: running;
 }
 
 @keyframes mover_3{
     
     100%{
-        background-position: -12516px top;
+        background-position: -11200px top;
         
     }
 }
