@@ -2209,16 +2209,16 @@ font-family: 'Montserrat', sans-serif;
     height: 350px;
     background-image: url(../img/esther.png);
     margin-top: 40px;
-    /*background-position: left top;
-    animation: mover_4 5s steps(64) infinite;
-    animation-play-state: paused;
+    background-position: left top;
+    animation: mover_4 5s steps(57) infinite;
+    animation-play-state: running;
 }
 
 @keyframes mover_4{
     
     100%{
-        background-position: -12800px top;
-    }*/
+        background-position: -11400px top;
+    }
 }
 
 .boton1_4{
