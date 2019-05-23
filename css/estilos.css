@@ -1436,19 +1436,19 @@ font-family: 'Montserrat', sans-serif;
 .cont1_2{
     width: 200px;
     height: 350px;
-    background-image: url(../img/peg.png);
+    background-image: url(../img/peg1.png);
     margin-top: 40px;
-    /*background-position: left top;
-    animation: mover_2 5s steps(64) infinite;
-    animation-play-state: paused;
+    background-position: left top;
+    animation: mover_2 5s steps(35) infinite;
+    animation-play-state: running;
     
 }
 
 @keyframes mover_2{
     
     100%{
-        background-position: -12800px top;
-    }*/
+        background-position: -7000px top;
+    }
 }
 
 .boton1_2{
