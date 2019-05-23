@@ -14,12 +14,12 @@ a:hover{
 }
 
 @font-face{
-font-family: 'Montserrat', sans-serif;';
+font-family: 'Montserrat', sans-serif;
 }
 body{
     
     font-size: 100%;
-    font-family: 'Montserrat', sans-serif;';
+    font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
    
 }
@@ -305,7 +305,6 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .todoCon1{
-    width: 100%
     height:800px;
 }
 
@@ -927,7 +926,6 @@ font-family: 'Montserrat', sans-serif;
 
 .infoR{
     width: 20%;
-    height: 350px;
     background: white;
     position: absolute;
     left: 75%;
@@ -1064,19 +1062,19 @@ font-family: 'Montserrat', sans-serif;
 .cont1_1{
     width: 200px;
     height: 350px;
-    background-image: url(../img/annette.png);
+    background-image: url(../img/animacionA.png);
     margin-top: 40px;
-    /*background-position: left top;
-    animation: mover_1 5s steps(64) infinite;
-    animation-play-state: paused;
+    background-position: left top;
+    animation: mover_1 5s steps(100) infinite;
+    animation-play-state: running;
     
 }
 
 @keyframes mover_1{
     
     100%{
-        background-position: -12800px top;
-    }*/
+        background-position: -20000px top;
+    }
 }
 
 .boton1_1{
@@ -1392,7 +1390,6 @@ font-family: 'Montserrat', sans-serif;
 
 .infoR_1{
     width: 20%;
-    height: 350px;
     background: white;
     position: absolute;
     left: 75%;
@@ -1769,7 +1766,6 @@ font-family: 'Montserrat', sans-serif;
 
 .infoR_2{
     width: 20%;
-    height: 350px;
     background: white;
     position: absolute;
     left: 75%;
@@ -1826,18 +1822,19 @@ font-family: 'Montserrat', sans-serif;
 .cont1_3{
     width: 200px;
     height: 350px;
-    background-image: url(../img/katherine.png);
+    background-image: url(../img/ani_K.png);
     margin-top: 40px;
-    /*background-position: left top;
-    animation: mover_3 5s steps(64) infinite;
-    animation-play-state: paused;
+    background-position: left top;
+    animation: mover_3 5s steps(56) infinite;
+    animation-play-state: running;
 }
 
 @keyframes mover_3{
     
     100%{
-        background-position: -12800px top;
-    }*/
+        background-position: -11200px top;
+        
+    }
 }
 
 .boton1_3{
@@ -2156,7 +2153,6 @@ font-family: 'Montserrat', sans-serif;
 
 .infoR_3{
     width: 20%;
-    height: 350px;
     background: white;
     position: absolute;
     left: 75%;
@@ -2211,18 +2207,18 @@ font-family: 'Montserrat', sans-serif;
 .cont1_4{
     width: 200px;
     height: 350px;
-    background-image: url(../img/esther.png);
+    background-image: url(../img/esther1.png);
     margin-top: 40px;
-    /*background-position: left top;
-    animation: mover_4 5s steps(64) infinite;
-    animation-play-state: paused;
+    background-position: left top;
+    animation: mover_4 5s steps(57) infinite;
+    animation-play-state: running;
 }
 
 @keyframes mover_4{
     
     100%{
-        background-position: -12800px top;
-    }*/
+        background-position: -11400px top;
+    }
 }
 
 .boton1_4{
@@ -2544,7 +2540,6 @@ font-family: 'Montserrat', sans-serif;
 
 .infoR_4{
     width: 20%;
-    height: 360px;
     background: white;
     position: absolute;
     left: 75%;
@@ -2903,20 +2898,8 @@ font-family: 'Montserrat', sans-serif;
     top: 115px;
 }
 
-.gameimgshadow6{
-    width: 100%;
-    height: 500px;
-    position: absolute;
-    background: black;
-    z-index: 1;
-    opacity: 0.5;
-}
-.gameimg6{
-    width: 100%;
-    height: 500px;
-    position: absolute;
-    filter: blur(3px);
-}
+
+
 
 .arrow_5{
     width: 100px;
@@ -2932,7 +2915,6 @@ font-family: 'Montserrat', sans-serif;
 
 .infoR_5{
     width: 20%;
-    height: 350px;
     background: white;
     position: absolute;
     left: 75%;
@@ -2988,18 +2970,18 @@ font-family: 'Montserrat', sans-serif;
 .cont1_6{
     width: 200px;
     height: 350px;
-    background-image: url(../img/olympicwoman.png);
+    background-image: url(../img/pilar.png);
     margin-top: 40px;
-    /*background-position: left top;
-    animation: mover_6 5s steps(64) infinite;
-    animation-play-state: paused;
+    background-position: left top;
+    animation: mover_6 5s steps(97) infinite;
+    animation-play-state: running;
 }
 
 @keyframes mover_6{
     
     100%{
-        background-position: -12800px top;
-    }*/
+        background-position: -19400px top;
+    }
 }
 
 .boton1_6{
@@ -3070,7 +3052,7 @@ font-family: 'Montserrat', sans-serif;
     color: white;
     top: 230px;
     margin: 3%;
-    margin-left: 50px;
+    margin-left: 10px;
     text-align:center;
     text-shadow: 0px 0px 10px 0px red;
     transition: 0.5s ease-out;
@@ -3319,7 +3301,6 @@ font-family: 'Montserrat', sans-serif;
 
 .infoR_6{
     width: 20%;
-    height: 350px;
     background: white;
     position: absolute;
     left: 75%;
@@ -3354,7 +3335,11 @@ font-family: 'Montserrat', sans-serif;
     
     width: 100%;
     height: 100vh;
-    background: #5fc3eb;
+    background-image: url(../img/texture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #5fc3eb;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3363,6 +3348,7 @@ font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     text-align: center;
     box-sizing: border-box;
+    transition: 0.5s ease-out;
 }
 
 .sectimg{

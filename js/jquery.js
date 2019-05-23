@@ -149,9 +149,9 @@ $(document).ready(function(){
         })
     }
 
-    function cambiarTexto(title,text,text2,color){
+    function cambiarTexto(title,text,color){
             $('.quetitle').html(title);
-            $('.quetext').html(text +=(text2));
+            $('.quetext').html(text);
             $('.cuadrolight').css('backgroundColor',color);
         }  
 
@@ -162,8 +162,7 @@ $(document).ready(function(){
             clickenboton(0);
             displayN(1);
             cambiarTexto('¿Qué es el nado sincronizado?',
-            'Es un deporte que se practica en una piscina combinando natación, gimnasia y danza. Un nadador o equipo de nadadores realiza una coreografía acompañada de música y unos jueces puntúan una serie de parámetros: dificultad y originalidad de los movimientos, sincronía entre movimientos y música, en definitiva la calidad técnica y artística. ',
-            'Se podría afirmar que esta disciplina es un baile con movimientos gimnásticos realizados en el medio acuático. Se compite en categorías distintas y en modalidad individual, de dúo o por equipos.',
+            'Es un deporte que se practica en una piscina combinando natación, gimnasia y danza. Un nadador o equipo de nadadores realiza una coreografía acompañada de música y unos jueces puntúan una serie de parámetros: dificultad y originalidad de los movimientos, sincronía entre movimientos y música, en definitiva la calidad técnica y artística. Se podría afirmar que esta disciplina es un baile con movimientos gimnásticos realizados en el medio acuático. Se compite en categorías distintas y en modalidad individual, de dúo o por equipos.',
             '#0090cc');
         }
 
@@ -173,7 +172,8 @@ $(document).ready(function(){
             clickenboton(1);
             displayB(1);
             displayN(2);
-            cambiarTexto('mandarina','Son buenas ','lola','#0090cc');
+            cambiarTexto('Gran Pionera de este deporte','Con tan sólo seis años, a la actriz se le diagnosticó un debilitamiento en las piernas, por lo que le tuvieron que poner unos tirantes de acero para que las piernas se fortaleciesen. Con 15 años las piernas de la actriz eran completamente normales, consiguiendo con sus entrenamientos de natación varias medallas en diferentes campeonatos.<br>En el año 1902, Annette se inscribe en las competiciones de Melbourne, consiguiendo varios récords en natación.<br>Por esta época a Annette se le atribuye el invento de la natación sincronizada, de la cual realizó varias demostraciones en un estanque de la ciudad de Nueva York.',
+            '#0090cc');
         }
 
 
@@ -183,6 +183,8 @@ $(document).ready(function(){
             clickenboton(2);
             displayB(2);
             displayN(3);
+            cambiarTexto('Datos de Interés','Es necesario desarrollar destrezas y habilidades relacionadas con el ballet, la expresión corporal y la gimnasia. En este sentido, el nado sincronizado es una actividad multidisciplinar.<br>Sus practicantes necesitan una evidente sensibilidad artística, precisión en sus movimientos y sentido del ritmo. Así mismo, es imprescindible el control de la apnea para moverse bajo el agua.',
+            '#0090cc');
             
         }
 
@@ -192,6 +194,8 @@ $(document).ready(function(){
             clickenboton(3);
             displayB(3);
             displayN(4);
+            cambiarTexto('Una Sirena Reconocida','Para Katherine, la natación sincronizada era un deporte mixto, ya que podría serlo si no hubiera sido transferida al extranjero (1943-1962) con la Cruz Roja como directora recreativa. Uno de sus primeros discípulos fue Hal Henning. Organizó una producción para las Fuerzas Armadas en las espectaculares fuentes, piscinas y jardines del palacio construido por los Reyes de las Dos Sicilias y utilizado como cuartel general aliado en Caserta, Italia. Cuando finalmente regresó a casa en 1962 después de observar la natación sincronizada en toda Europa, su bebé era un deporte en toda regla y desde entonces ha sido un deporte acuático y una forma de arte dominantes en los Estados Unidos',
+            '#0090cc');
         }
 
         if(posY > 2400){
@@ -200,6 +204,8 @@ $(document).ready(function(){
             clickenboton(4);
             displayB(4);
             displayN(5);
+            cambiarTexto('La fama de este deporte','La habilidad de Esther en la natación le llevó a protagonizar una serie de títulos en los que el agua era el medio ideal para mostrar su talento deportivo, ofreciendo al público un lúdico y húmedo entretenimiento en la etapa bélica y post-bélica. Se convirtió en “La Sirena de América”.<br>Esther era una chica guapa y un portento en los deportes acuáticos. Campeona y “recordwoman” estadounidense en varias pruebas de natación, no pudo cumplir su sueño de asistir a los Juegos Olímpicos de 1940, ya que al estallar la Segunda Guerra Mundial un año antes el certamen tuvo que cancelarse.',
+            '#0090cc');
         }
 
         if(posY > 3000){
@@ -208,6 +214,8 @@ $(document).ready(function(){
             clickenboton(5);
             displayB(5);
             displayN(6);
+            cambiarTexto('Datos importantes','Las reglas del nado sincronizado hacen que sea uno de los deportes más exigentes que existe debido a sus rigurosos entrenamientos y la exigencia de las excelentes condiciones físicas que debe tener cada participante. El trabajo de los nadadores consiste en formar una rutina de movimientos al ritmo de la música. El deporte cuenta con las modalidades de solo, dúo o grupo, para cada modalidad existe un grupo de reglas, pero estas no varían mucho en cada una.',
+            '#0090cc');
         }
 
         if(posY > 3600){
@@ -216,6 +224,8 @@ $(document).ready(function(){
             clickenboton(6);
             displayB(6);
             displayN(7);
+            cambiarTexto('Ganadoras','CARACAS, Venezuela - Tracie Ruiz y Candy Costie, socios durante ocho años en natación sincronizada, obtuvieron la medalla de oro de los Estados Unidos el viernes en el evento de dúo en los Juegos Panamericanos. La pareja de Bothell, Washington, compiló 188.550 puntos para vencer a Penny y Vicky Vilagos de Canadá y Pilar Ramírez y Claudia Novelo de México. Canadá recogió la medalla de plata con 187.233 y México se llevó el bronce con 165.412.',
+            '#0090cc');
         }
 
         if(posY > 4200){

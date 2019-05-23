@@ -22,7 +22,7 @@ $(document).ready(function(){
 
          $('.años').css({'top': posicion5 + 'px'});
         $('.circlelight').css({'top': posicion6 + 'px'});
-        $('.contenedor2,.contenedor3,.contenedor4,.contenedor5,.contenedor6,.contenedor7,.contenedor8').css({
+        $('.contenedor2,.contenedor3,.contenedor4,.contenedor5,.contenedor6,.contenedor7,.contenedor8,.contenedor9').css({
             'background-position': '0' - posicionX + 'px 0px'
         });
 

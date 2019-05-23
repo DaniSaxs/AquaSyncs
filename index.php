@@ -5,6 +5,15 @@ require "php/conexion.php";
 $sql = "SELECT * FROM secciones";
 $result = mysqli_query($conect,$sql);
 
+    $con2 = mysqli_connect('localhost','root','','niveles');
+    $sql2 = "SELECT * FROM nivel_1 ORDER BY score DESC LIMIT 5";
+    $sql3 = "SELECT * FROM nivel_2 ORDER BY score DESC LIMIT 5";
+    $sql4 = "SELECT * FROM nivel_3 ORDER BY score DESC LIMIT 5";
+    $sql5 = "SELECT * FROM nivel_4 ORDER BY score DESC LIMIT 5";
+    $result2 = mysqli_query($con2,$sql2);
+    $result3 = mysqli_query($con2,$sql3);
+    $result4 = mysqli_query($con2,$sql4);
+    $result5 = mysqli_query($con2,$sql5);
 
 ?>
 
@@ -44,7 +53,7 @@ $result = mysqli_query($conect,$sql);
     <div class="nosotroslight animated bounceInDown"><h3 class="nosoli">¿Qué<br>somos?</h3></div>
     <div class="nostig"><div class="firstnos"><h3 class="nostigtext">AquaSyncs</h3><p class="nostigpar">AquaSyncs es un proyecto sobre el nado sincronizado con el objetivo de informar al usuario acerca de la historia de este deporte. Esta página se presenta en forma de Timeline en la que se muestra la cronología del nado sincronizado.
     Nosotros queremos lograr que los usuarios que naveguen por nuestra página, aprendan y se animen a conocer más sobre este deporte.</p><h3 class="advertext">(Presiona en cualquier parte para cerrar)</h3></div><div class="imgnos1"><img src="img/noslight_1.jpg" width="1280px" height="740px"></div></div>
-    <div class="us animated jello infinite">
+    <div class="us">
         <i class="flecha fas fa-arrow-right"></i>
         <i style="display: none" class="flecha fas fa-arrow-left"></i>
     </div>
@@ -70,9 +79,85 @@ $result = mysqli_query($conect,$sql);
         <div class="arrow"><h5 class="arrowtext">Play</h5></div>
     </div>
     <div class="infoR">
-        <h3 class="infotext1">"En busca del Nado"</h3><h6 class="infotext2">Adalia es una chica de 19 años, obediente, perseverante, perspicaz, inteligente y apasionada en lo que hace, es amigable, alegre, sociable, y decisiva.
+    <div class="container pt-2 pb-2" style="text-align: center; color: #ff2c2c; font-weight: 600;">Tabla de Marcadores</div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <div class="container pt-2 pb-2" style="text-align: center; background-color: #ff2c2c; color: white; font-weight: 600;">Nivel 1</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col" style="color: #ff2c2c;">Nombre</th>
+                    <th scope="col" style="color: #ff2c2c;">Puntaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php while($row2 = mysqli_fetch_array($result2)){
+                        echo "<tr><td>".$row2['nombre']."</td><td>".$row2['score']."</td></tr>";}
+                    ?>
+                </tbody>
+            </table>
+            </div>
+            <div class="carousel-item">
+            <div class="container pt-2 pb-2" style="text-align: center; background-color: #ff2c2c; color: white; font-weight: 600;">Nivel 2</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col" style="color: #ff2c2c;">Nombre</th>
+                    <th scope="col" style="color: #ff2c2c;">Puntaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php while($row3 = mysqli_fetch_array($result3)){
+                        echo "<tr><td>".$row3['nombre']."</td><td>".$row3['score']."</td></tr>";}
+                    ?>
+                </tbody>
+            </table>
+            </div>
+            <div class="carousel-item">
+            <div class="container pt-2 pb-2" style="text-align: center; background-color: #ff2c2c; color: white; font-weight: 600;">Nivel 3</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col" style="color: #ff2c2c;">Nombre</th>
+                    <th scope="col" style="color: #ff2c2c;">Puntaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php while($row4 = mysqli_fetch_array($result4)){
+                        echo "<tr><td>".$row4['nombre']."</td><td>".$row4['score']."</td></tr>";}
+                    ?>
+                </tbody>
+            </table>
+            </div>
+            <div class="carousel-item">
+            <div class="container pt-2 pb-2" style="text-align: center; background-color: #ff2c2c; color: white; font-weight: 600;">Nivel 4</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col" style="color: #ff2c2c;">Nombre</th>
+                    <th scope="col" style="color: #ff2c2c;">Puntaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <?php while($row5 = mysqli_fetch_array($result5)){
+                        echo "<tr><td>".$row5['nombre']."</td><td>".$row5['score']."</td></tr>";}
+                    ?>
+                </tbody>
+            </table>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" style="align-items: flex-start !important; margin-top:6px !important;">
+            <i class="fas fa-angle-left" style="font-size: 30px;"></i>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" style="align-items: flex-start !important; margin-top:6px !important;">
+            <i class="fas fa-angle-right" style="font-size: 30px;"></i>
+        </a>
+    </div>
+        <!-- <h3 class="infotext1">"En busca del Nado"</h3><h6 class="infotext2">Adalia es una chica de 19 años, obediente, perseverante, perspicaz, inteligente y apasionada en lo que hace, es amigable, alegre, sociable, y decisiva.
             <br>Resulta que alguien le tenía envidia y le hurtó
-            sus implementos del Baile Acuático.<br>Tu misión es ayudar a Adalia a encontrarlos para que pueda prácticar de nuevo sus hermosas rutinas.</h6></div>
+            sus implementos del Baile Acuático.<br>Tu misión es ayudar a Adalia a encontrarlos para que pueda prácticar de nuevo sus hermosas rutinas.</h6> -->
+    </div>
         </li>
         <li class="light2_1">
             <div class="gamebox_1">
@@ -111,21 +196,69 @@ $result = mysqli_query($conect,$sql);
                     <h3 class="infotext1_4">"Esther Williams"</h3><h6 class="infotext2_4">En el año 1942, intervine en mi primera película que se llamó “Andy Hardy's Double Life”, donde interpretó el papel de Sheila Brooks, junto a Mickey Rooney y Cecilia Parker.
                     George Sidney me ofreció, en el año 1944, una gran oportunidad en la película Escuela de sirenas, un musical distinto hasta la fecha, ya que tiene como escenario el agua, y es la película con que me comencé a conocer mundialmente.</h6></div>
                 </li>
-                <li class="light2_5">
-                    <div class="gamebox_5"><div class="gameimgshadow6"></div><div class="gameimg6"><img src ="img/infoimg.jpg" width="100%" height="500px"></div>
-                    <div class="arrow_5"><h5 class="arrowtext_5">Espacio para Infografía</h5>
-                    </div>
+
+
+
+            <li class="light2_5">
+                <div class="gamebox_5">
+                    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="false">
+                          <img src="img/infografia_1.jpg" class="d-block w-100" alt="infografia_1.jpg">
+                      </div>
+                      <div class="carousel-item" data-interval="2000">
+                          <img src="img/infografia_2.jpg" class="d-block w-100" alt="infografia_2.jpg">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="img/infografia_3.jpg" class="d-block w-100" alt="infografia_3.jpg">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="img/infografia_4.jpg" class="d-block w-100" alt="infografia_4.jpg">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="img/infografia_5.jpg" class="d-block w-100" alt="infografia_5.jpg">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="img/infografia_6.jpg" class="d-block w-100" alt="infografia_6.jpg">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="img/infografia_7.jpg" class="d-block w-100" alt="infografia_7.jpg">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="img/infografia_8.jpg" class="d-block w-100" alt="infografia_8.jpg">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="img/infografia_9.jpg" class="d-block w-100" alt="infografia_9.jpg">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="img/infografia_10.jpg" class="d-block w-100" alt="infografia_10.jpg">
+                      </div>
+                     </div>
+                     <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                       
                 </div>
                 <div class="infoR_5">
-                    <h3 class="infotext1_5">"Reglamento"</h3><h6 class="infotext2_5">Finalmente en el año 1955 por un invento que realizó un señor empezó a darle orden a esta disciplina y a exigir muchas cosas porque al ver presentaciones sabía que le hacía falta algo para que tuviera un éxito rotundo en su historia.</h6></div>
-                </li>
+                    <h3 class="infotext1_5">"Reglamento"</h3><h6 class="infotext2_5">Finalmente en el año 1955 por un invento que realizó un señor empezó a darle orden a esta disciplina y a exigir muchas cosas porque al ver presentaciones sabía que le hacía falta algo para que tuviera un éxito rotundo en su historia.</h6>
+                </div>
+             </li>
+
+
+
                 <li class="light2_6">
                     <div class="gamebox_6"><div class="gameimgshadow7"></div><div class="gameimg7"><img src ="img/olympicimg.jpg" width="100%" height="500px"></div>
                     <div class="arrow_6"><h5 class="arrowtext_6">Play</h5>
                     </div>
                 </div>
                 <div class="infoR_6">
-                    <h3 class="infotext1_6">"Introducción a los Juegos Olímpicos"</h3><h6 class="infotext2_6"> soy Claudia, y mi pasión siempre fue la natación...Desde niña he perseverado hasta llegar aquí, y gracias a la oportunidad de entrar con mi equipo, por el trabajo árduo, y el entrenamiento constante, pude cumplir mi sueño, fue gracias a Annette Kellerman que me inspiré para realizar este deporte, mi mamá me decía de niña que tenía gran talento para la danza y la natación.
+                    <h3 class="infotext1_6">"Introducción a los Juegos Olímpicos"</h3><h6 class="infotext2_6"> Soy Tracie Ruiz, y mi pasión siempre fue la natación...Desde niña he perseverado hasta llegar aquí, y gracias a la oportunidad de entrar con mi equipo, por el trabajo árduo, y el entrenamiento constante, pude cumplir mi sueño, fue gracias a Annette Kellerman que me inspiré para realizar este deporte, mi mamá me decía de niña que tenía gran talento para la danza y la natación.
                     </h6></div>
                 </li>
             </ul>
@@ -308,10 +441,10 @@ $result = mysqli_query($conect,$sql);
             <div class="boton1"></div></div>
 
             <div class="textone_6"><h3 class="enter1_6"><?php echo $row['texto1'] ?></h3></div>
-            <div class="open1_6"><div class="open1box_6"><h3 class="open1boxtext_6">Personaje</h3><p class="open1boxpar_6">Claudia se distingue porque no es egoísta y siempre trata bien a los demás.<br>Pilar es una joven extrovertida y no le gusta ser aburrida. </p><div class="open1img_6"><img src ="img/open_12.jpg" width = "310px" height = "220px"></div></div></div>
+            <div class="open1_6"><div class="open1box_6"><h3 class="open1boxtext_6">Personaje</h3><p class="open1boxpar_6">Tracie Ruiz se distingue porque no es egoísta y siempre trata bien a los demás.<br>Candy Costie es una joven extrovertida y no le gusta ser aburrida. </p><div class="open1img_6"><img src ="img/open_12.jpg" width = "310px" height = "220px"></div></div></div>
 
             <div class="textree_6"><h3 class="enter3_6"><?php echo $row['texto2'] ?></h3></div>
-            <div class="open2_6"><div class="open2box_6"><h3 class="open2boxtext_6">Campeonato</h3><p class="open2boxpar_6"> en los juegos olímpicos de los Angeles-California, estoy en 1984, soy Claudia, y mi pasión siempre fue la natación.</p><div class="open2img_6"><img src ="img/open_13.jpg" width = "330px" height = "170px"></div></div></div></div></section>
+            <div class="open2_6"><div class="open2box_6"><h3 class="open2boxtext_6">Campeonato</h3><p class="open2boxpar_6"> en los juegos olímpicos de los Angeles-California, estoy en 1984, soy Tracie Ruiz, y mi pasión siempre fue la natación.</p><div class="open2img_6"><img src ="img/open_13.jpg" width = "330px" height = "170px"></div></div></div></div></section>
 
 
 
@@ -343,7 +476,7 @@ $result = mysqli_query($conect,$sql);
 <script defer src="js/bootstrap.min.js"></script>
 <script defer src="js/bootstrap.bundle.min.js"></script>
 <script defer src="js/jquery.easing.min.js"></script>
-<script defer src="js/jquery.easing.compatibility.min.js"></script>   
+<script defer src="js/jquery.easing.compatibility.min.js"></script>  
 <script src="js/codigo.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/parallax.js"></script>
