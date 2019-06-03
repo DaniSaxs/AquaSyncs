@@ -24,7 +24,7 @@ $(document).ready(function(){
 
         function changeDer(esconder){
             $('.SeccionesDesplazadas li').eq(esconder).css('left', '100%');
-            $('.circlelight').css('left', '93%');
+            $('.circlelight').css('left', '95%');
             $('.scroll').css('overflowY', 'scroll');
         }
 
@@ -273,5 +273,9 @@ $(document).ready(function(){
     // }, 1500, 'easeInOutQuart');
     //     });
     });
+
+    $('.annS').carousel({
+      interval: 1000000000
+    })
 
 });

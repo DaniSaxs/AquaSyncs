@@ -638,7 +638,11 @@ font-family: 'Montserrat', sans-serif;
 .nostig{
     width: 100%;
     height: 100vh;
-    background: #ff5656;
+    background-image: url(../img/texture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #ff5656;
     position: fixed;
     z-index: 989;
     transition: 0.4s ease-out;
@@ -761,7 +765,7 @@ font-family: 'Montserrat', sans-serif;
     position: absolute;
     border-radius: 25%;
     top: 20px;
-    left: 150px;
+    left: 100px;
     cursor: pointer;
 }
 
@@ -826,12 +830,12 @@ font-family: 'Montserrat', sans-serif;
 
 
 .circlelight{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     position: fixed;
     background: #86e9ff;
     top: 100px;
-    left: 93%;
+    left: 95%;
     z-index: 899;
     border-radius: 100%;
     transition: 0.5s ease-out;
@@ -843,26 +847,26 @@ font-family: 'Montserrat', sans-serif;
 }
 
 .textlight i{
-    font-size: 70px;
+    font-size: 40px;
     position: absolute;
-    top: 65px;
-    left: 9%;
+    top: 58px;
+    left: 11%;
     color: #005a6d;
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     background: white;
     border-radius: 100%;
     cursor: pointer;
 }
 
 .textlight2 i{
-    font-size: 70px;
+    font-size: 40px;
     position: absolute;
-    top:70px;
-    left: 55%;
+    top: 58px;
+    left: 68%;
     color: #005a6d;
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     background: white;
     border-radius: 100%;
     cursor: pointer;
@@ -891,7 +895,6 @@ font-family: 'Montserrat', sans-serif;
 .gamebox{
     width: 60%;
     height: 500px;
-    background: white;
     position: relative;
     left: -10%;
     top: 115px;
@@ -1357,7 +1360,6 @@ font-family: 'Montserrat', sans-serif;
 
 .gamebox_1{
     width: 60%;
-    height: 500px;
     background: white;
     position: relative;
     left: -10%;
@@ -2605,6 +2607,25 @@ font-family: 'Montserrat', sans-serif;
     100%{
         background-position: -12800px top;
     }*/
+}
+
+.rules{
+    animation: rules1 2s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rules1{
+    0%{
+        margin-top: 0px;
+    }
+
+    50%{
+        margin-top: 20px;
+    }
+
+    100%{
+        margin-top: 0px;
+    }
 }
 
 .cont1_5 img{

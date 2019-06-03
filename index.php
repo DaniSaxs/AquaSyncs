@@ -25,14 +25,24 @@ $result = mysqli_query($conect,$sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="preload" href="css/estilos.css" as="style">
+    <link rel="preload" href="css/bootstrap.min.css" as="style">
+    <link rel="preload" href="css/animate.css" as="style">
+    <link rel="preload" href="js/codigo.js" as="script">
+    <link rel="preload" href="js/jquery.js" as="script">
+    <link rel="preload" href="js/parallax.js" as="script">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/favicon.ico.ico.ico" type="image/x-icon" rel="shortcut icon" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/EN BUSCA WEB(No Develop).json", {onProgress: UnityProgress});
+    </script>
     <title>AquaSyncs</title>
 </head>
 
@@ -58,8 +68,7 @@ $result = mysqli_query($conect,$sql);
         <i style="display: none" class="flecha fas fa-arrow-left"></i>
     </div>
     <div class="us2">
-        <div class="instagram1" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-user"></i></div></a>
-        <div class="mail1" data-toggle="modal" data-target="#exampleModal1"><i class="fas fa-envelope"></i></div>
+        <div class="mail1" data-toggle="modal" data-target="#exampleModal1" tooltip="Slide to the left"><i class="fas fa-envelope"></i></div>
         <h3 class="nous">Desarrolladores</h3><a class="nosS" href="#aNosotros"><div class="nous1"><i class="fas fa-angle-down"></i></div></a></div>
         <div class="años">
             <ul>
@@ -75,8 +84,14 @@ $result = mysqli_query($conect,$sql);
         </div>
 
 <ul class="SeccionesDesplazadas">
-    <li class="light2"><div class="gamebox"><div class="gameimgshadow"></div><div class="gameimg1"><img src ="img/game1.jpg" width="100%" height="500px"></div>
-        <div class="arrow"><h5 class="arrowtext">Play</h5></div>
+    <li class="light2"><div class="gamebox">
+        <div class="webgl-content">
+      <div id="gameContainer" style="width: 860px; height: 500px"></div>
+      <div class="footer">
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">En busca del nado</div>
+      </div>
+    </div>
     </div>
     <div class="infoR">
     <div class="container pt-2 pb-2" style="text-align: center; color: #ff2c2c; font-weight: 600;">Tabla de Marcadores</div>
@@ -161,12 +176,40 @@ $result = mysqli_query($conect,$sql);
         </li>
         <li class="light2_1">
             <div class="gamebox_1">
-                <h1 class="titleqr">"Tras el Cristal"</h1><h3 class="textqr">Escanea esta imagen desde tu movil con la App "AquaSyncs" para disfrutar de esta experiencia en Realidad Aumentada</h3><div class="arrow_1"><img src ="img/logo2.png" width ="315px" height = "315px"></div>
+                <div id="carouselExampleControls" class="carousel slide annS" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <h1 style="text-align: center; color: #005a6d;">"Pasos para la Realidad Aumentada"</h1><h3 style="text-align: center; color: #ee5253">Paso 1:</h3><p style="text-align: center;" class="w-75">Descarga el siguiente archivo e instálalo en tu móvil</p>
+                        <div style= "display: flex; justify-content: space-around; align-items: center; flex-direction: column;"><img src ="img/cell.png" width ="250px" height = "250px"><br>
+                        <a href="js/AnnetteAR.apk" download="AnnetteAR" class="btn btn-success"><i class="fab fa-android" style="font-size: 15px;"></i> Descargar APK</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                      <h1 style="text-align: center; color: #005a6d;">"Pasos para la Realidad Aumentada"</h1><h3 style="text-align: center; color: #ee5253">Paso 2:</h3><p style="text-align: center;" class="w-75">Abre la aplicación desde tu móvil</p>
+                        <div style= "display: flex; justify-content: space-around; align-items: center; flex-direction: column;"><img src ="img/cell2.png" width ="215px" height = "315px">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                      <h1 style="text-align: center; color: #005a6d;">"Pasos para la Realidad Aumentada"</h1><h3 style="text-align: center; color: #ee5253">Paso 3:</h3><p style="text-align: center;" class="w-75">Con la cámara enfoca la siguiente imagen:</p>
+                        <div style= "display: flex; justify-content: space-around; align-items: center; flex-direction: column;"><img src ="img/logo2.png" width ="315px" height = "315px">
+                        </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <i class="fas fa-angle-left" style="font-size: 30px; color: black;"></i>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <i class="fas fa-angle-right" style="font-size: 30px; color: black;"></i>
+                  </a>
+                </div>
             </div>
             <div class="infoR_1">
-                <h3 class="infotext1_1">"Annette Kellerman"</h3><h6 class="infotext2_1">En 1907 Anette queria popularizar el nado sincronizado ya que
+                <h3 class="infotext1_1">"Annette Kellerman"</h3>
+                <h6 class="infotext2_1">En 1907 Anette queria popularizar el nado sincronizado ya que
                     aún no era tan trascendente en la sociedad
-                    entonces creó un grupo con varias chicas y pensaron que hacer para poder popularizarlo.<br>Después de pensar varios días se les vino la gran idea de bailar en un tanque de vidrio en new york, pues seria fuera de lo común y su presentación fue un éxito. </h6></div>
+                    entonces creó un grupo con varias chicas y pensaron que hacer para poder popularizarlo.<br>Después de pensar varios días se les vino la gran idea de bailar en un tanque de vidrio en new york, pues seria fuera de lo común y su presentación fue un éxito. 
+                    </h6>
+                </div>
                 </li>
                 <li class="light2_2">
                     <div class="gamebox_2"><div class="gameimgshadow3"></div><div class="gameimg3"><img src ="img/pegimg.jpg" width="100%" height="500px"></div>
@@ -266,7 +309,7 @@ $result = mysqli_query($conect,$sql);
 
 
                         <section class="contenedor2" id="a1891">
-                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                               <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content" style="
                                     border-radius: 50px !important; 
@@ -295,7 +338,7 @@ $result = mysqli_query($conect,$sql);
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content" style="
@@ -310,18 +353,19 @@ $result = mysqli_query($conect,$sql);
                     <h5 class="modal-title" id="exampleModalLabel" style="color: #005a6d;">Contacto</h5>
               </div>
               <div class="modal-body" style="color: black; font-size: 20px;">
+              <p class="modal-text">Escríbenos tus sugerencias, dudas e inquietudes...</p>
                 <form action="contact.php" method="post">
                   <div class="form-group">
                     <label for="titulo">Título</label>
                     <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Título">
                     <label for="exampleInputEmail1">Correo</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo" name="correo">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo" name="correo">
                     <label for="mensaje">Mensaje</label>
                     <textarea name="mensaje" class="form-control" id="mensaje" cols="30" rows="5" placeholder="Ingrese su mensaje"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>
-            <div class="cerrar1 animated pulse infinite" style="left:104% !important; top:-47px !important;" data-dismiss="modal"><h3 class="equix">X</h3></div>
+            <div class="cerrar1 animated pulse infinite" style="left:87% !important; top:-47px !important;" data-dismiss="modal"><h3 class="equix">X</h3></div>
         </div>
     </div>
 </div>
@@ -421,7 +465,7 @@ $result = mysqli_query($conect,$sql);
     <div class="todoCon1">
         <div class="Pflotan"><img src="<?php echo $row['img1']?>" width="350px" height="250px"></div>
         <div class="flotan2"><img src="<?php echo $row['img2']?>" width="350px" height="250px"></div>
-        <div class="cont1_5"><img src ="img/reglas.png" width="300px" height="300px">
+        <div class="cont1_5"><img class="rules" src ="img/reglas.png" width="300px" height="300px">
             <div class="boton1"></div></div>
 
             <div class="textone_5"><h3 class="enter1_5"> <?php echo $row['texto1'] ?></h3></div>
@@ -472,17 +516,12 @@ $result = mysqli_query($conect,$sql);
         </p>
     </div>
 </footer>
-<script src="js/jquery-3.3.1.min.js"></script> 
+<script defer src="js/jquery-3.3.1.min.js"></script> 
 <script defer src="js/bootstrap.min.js"></script>
-<script defer src="js/bootstrap.bundle.min.js"></script>
-<script defer src="js/jquery.easing.min.js"></script>
-<script defer src="js/jquery.easing.compatibility.min.js"></script>  
-<script src="js/codigo.js"></script>
-<script src="js/jquery.js"></script>
-<script src="js/parallax.js"></script>
-
-
-</script>
+<script defer src="js/jquery.easing.min.js"></script> 
+<script defer src="js/codigo.js"></script>
+<script defer src="js/jquery.js"></script>
+<script defer src="js/parallax.js"></script>
 
 </body>
 </html>
