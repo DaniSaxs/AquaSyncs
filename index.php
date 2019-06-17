@@ -5,25 +5,20 @@ require "php/conexion.php";
 $sql = "SELECT * FROM secciones";
 $result = mysqli_query($conect,$sql);
 
-    $con2 = mysqli_connect('localhost','root','','niveles');
-    $sql2 = "SELECT * FROM nivel_1 ORDER BY score DESC LIMIT 5";
-    $sql3 = "SELECT * FROM nivel_2 ORDER BY score DESC LIMIT 5";
-    $sql4 = "SELECT * FROM nivel_3 ORDER BY score DESC LIMIT 5";
-    $sql5 = "SELECT * FROM nivel_4 ORDER BY score DESC LIMIT 5";
-    $result2 = mysqli_query($con2,$sql2);
-    $result3 = mysqli_query($con2,$sql3);
-    $result4 = mysqli_query($con2,$sql4);
-    $result5 = mysqli_query($con2,$sql5);
+// file_get_contents( "https://juegonado.000webhostapp.com/conexion2.php");
+
+require "php/conexion2.php";
 
 ?>
 
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preload" href="css/estilos.css" as="style">
     <link rel="preload" href="css/bootstrap.min.css" as="style">
@@ -37,12 +32,6 @@ $result = mysqli_query($conect,$sql);
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/EN BUSCA WEB(No Develop).json", {onProgress: UnityProgress});
-    </script>
     <title>AquaSyncs</title>
 </head>
 
@@ -84,14 +73,10 @@ $result = mysqli_query($conect,$sql);
         </div>
 
 <ul class="SeccionesDesplazadas">
-    <li class="light2"><div class="gamebox">
-        <div class="webgl-content">
-      <div id="gameContainer" style="width: 860px; height: 500px"></div>
-      <div class="footer">
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">En busca del nado</div>
-      </div>
-    </div>
+    <li class="light2"><div class="gamebox d-flex justify-content-center align-items-center">
+        <!-- ------------------------Aquí va click de juego----------------- -->
+        <img src="img/UI.png" width="350px" height="250px" class="animated pulse infinite">
+        <a href="juego.html" target="blank" class="btn btn-danger animated pulse infinite">Click Aquí para Jugar</a>
     </div>
     <div class="infoR">
     <div class="container pt-2 pb-2" style="text-align: center; color: #ff2c2c; font-weight: 600;">Tabla de Marcadores</div>
@@ -212,9 +197,11 @@ $result = mysqli_query($conect,$sql);
                 </div>
                 </li>
                 <li class="light2_2">
-                    <div class="gamebox_2"><div class="gameimgshadow3"></div><div class="gameimg3"><img src ="img/pegimg.jpg" width="100%" height="500px"></div>
-                    <div class="arrow_2"><h5 class="arrowtext_2">Play</h5>
-                    </div>
+                    <div class="gamebox_2">
+                        <video controls width="100%">
+                            <source src="videos/peg.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                 </div>
                 <div class="infoR_2">
                     <h3 class="infotext1_2">"Un sueño cumplido"</h3><h6 class="infotext2_2">Peg a la edad de 14 años era muy ágil para el nado, es más
@@ -222,8 +209,11 @@ $result = mysqli_query($conect,$sql);
                     practicar este deporte, nada la limitaba para nada y dia a dia se esforzaba para ser la mejor.</h6></div>
                 </li>
                 <li class="light2_3">
-                    <div class="gamebox_3"><div class="gameimgshadow4"></div><div class="gameimg4"><img src ="img/sirenasimg.jpg" width="100%" height="500px"></div>
-                    <div class="arrow_3"><h5 class="arrowtext_3">Play</h5>
+                    <div class="gamebox_3">
+                        <video controls width="100%">
+                        <source src="videos/katherine.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>    
                     </div>
                 </div>
                 <div class="infoR_3">
@@ -231,8 +221,11 @@ $result = mysqli_query($conect,$sql);
                     Katherine aparte de ser buena en la natación, era buena en el baile. Querían hacer algo muy diferente y de Repente a Gaby se le ocurre desarrollar una coreografía con algunos movimientos de baile y fueron llamadas "Las Sirenas Modernas".</h6></div>
                 </li>
                 <li class="light2_4">
-                    <div class="gamebox_4"><div class="gameimgshadow5"></div><div class="gameimg5"><img src ="img/estherimg.jpg" width="100%" height="500px"></div>
-                    <div class="arrow_4"><h5 class="arrowtext_4">Play</h5>
+                    <div class="gamebox_4">
+                        <video controls width="100%">
+                        <source src="videos/esther.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video> 
                     </div>
                 </div>
                 <div class="infoR_4">
@@ -296,8 +289,11 @@ $result = mysqli_query($conect,$sql);
 
 
                 <li class="light2_6">
-                    <div class="gamebox_6"><div class="gameimgshadow7"></div><div class="gameimg7"><img src ="img/olympicimg.jpg" width="100%" height="500px"></div>
-                    <div class="arrow_6"><h5 class="arrowtext_6">Play</h5>
+                    <div class="gamebox_6">
+                    <video controls width="100%">
+                        <source src="videos/olimpicos.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                     </div>
                 </div>
                 <div class="infoR_6">
@@ -309,7 +305,7 @@ $result = mysqli_query($conect,$sql);
 
 
                         <section class="contenedor2" id="a1891">
-                            <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                               <div class="modal-dialog modal-dialog-centered" role="document">
                                 <div class="modal-content" style="
                                     border-radius: 50px !important; 
@@ -338,9 +334,9 @@ $result = mysqli_query($conect,$sql);
                         </div>
                     </div>
                 </div>
-            </div> -->
-            <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
+            </div>
+            <div class="modal fade" id="exampleModal1" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content" style="
                     border-radius: 50px !important;
                     border:0px solid !important; 
@@ -499,7 +495,7 @@ $result = mysqli_query($conect,$sql);
 
 
 <section class="contenedor9" id="aNosotros"><h3 class="sectimg">DESARROLLADORES</h3>
-    <ul class="cajaFotos">
+    <!-- <ul class="cajaFotos">
         <li>
             <div><img class="F1" src="img/foto1.jpg" width="350px" height="200px"></div>
             <div><img class="F2" src="img/foto3.jpg" width="250px" height="270px"></div>
@@ -508,11 +504,43 @@ $result = mysqli_query($conect,$sql);
             <div><img class="F3" src="img/foto2.jpg" width="350px" height="270px"></div>
             <div><img class="F4" src="img/foto4.jpg" width="250px" height="270px"></div>
         </li>
-    </ul>
+    </ul> -->
+    <div class="row" style="display: flex; justify-content: center; align-items: center;">
+        <div class="card m-4" style="width: 18rem;">
+          <div style="overflow: hidden; height: 250px;"><img class="card-img-top" src="img/manuela.jpg" alt="Card image cap"></div>
+          <div class="card-body">
+            <h5 class="card-title" style="color: black;">Manuela Alzate</h5>
+            <p class="card-text" style="font-size: 20px; color: black;">Soy una chica decidida y creativa</p>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+           <div style="overflow: hidden; height: 250px;"><img class="card-img-top" src="img/dani.jpg" alt="Card image cap"></div>
+          <div class="card-body">
+            <h5 class="card-title" style="color: black;">Daniel Ramírez</h5>
+            <p class="card-text" style="font-size: 20px; color: black;">Me encanta la producción audiovisual!</p>
+          </div>
+        </div>
+    </div>
+    <div class="row" style="display: flex; justify-content: center; align-items: center;">
+        <div class="card m-4" style="width: 18rem;">
+           <div style="overflow: hidden; height: 250px;"><img class="card-img-top" src="img/cristian.jpg" alt="Card image cap"></div>
+          <div class="card-body">
+            <h5 class="card-title" style="color: black;">Cristian Marín</h5>
+            <p class="card-text" style="font-size: 20px; color: black;">Soy especial!</p>
+          </div>
+        </div>
+        <div class="card m-4" style="width: 18rem;">
+           <div style="overflow: hidden; height: 250px;"><img class="card-img-top" src="img/alejo.jpg" alt="Card image cap"></div>
+          <div class="card-body">
+            <h5 class="card-title" style="color: black;">Alejandro Gómez</h5>
+            <p class="card-text" style="font-size: 20px; color: black;">El diseño es mi pasión</p>
+          </div>
+        </div>
+    </div>
 </section>
 <footer id="footer" id="aFooter"><a class="subirS" href="#a1891"><div class="logored"></div></a>
     <div class="datosF">
-        <p class="correo1">Correo: example@gmail.com<br><br><br>Cel: 000 - 000 - 00 - 00<br><br><br>©AquaSyncs - Todos los derechos reservados.
+        <p class="correo1">Correo: aquasyncsweb@gmail.com<br><br><br>Cel: 301 - 245 - 17 - 02<br><br><br>©AquaSyncs - Todos los derechos reservados.
         </p>
     </div>
 </footer>

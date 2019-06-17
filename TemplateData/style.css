@@ -16,3 +16,15 @@
 .webgl-content .footer .webgl-logo {background-image: url('webgl-logo.png'); width: 204px; float: left;}
 .webgl-content .footer .title {margin-right: 10px; float: right;}
 .webgl-content .footer .fullscreen {background-image: url('fullscreen.png'); width: 38px; float: right;}
+
+.cuerpo{
+	width: 100%;
+    height: 100vh;
+    background-image: url(../img/texture.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #7cbdff ;
+    position: fixed;
+    transition: 0.5s ease-out;
+}
