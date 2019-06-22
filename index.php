@@ -50,8 +50,8 @@ require "php/conexion2.php";
 <header class="cabecera animated bounceOut">
     <img class="logo" src="img/logo2.png"></header>
     <div class="nosotroslight animated bounceInDown"><h3 class="nosoli">¿Qué<br>somos?</h3></div>
-    <div class="nostig"><div class="firstnos"><h3 class="nostigtext">AquaSyncs</h3><p class="nostigpar">AquaSyncs es un proyecto sobre el nado sincronizado con el objetivo de informar al usuario acerca de la historia de este deporte. Esta página se presenta en forma de Timeline en la que se muestra la cronología del nado sincronizado.
-    Nosotros queremos lograr que los usuarios que naveguen por nuestra página, aprendan y se animen a conocer más sobre este deporte.</p><h3 class="advertext">(Presiona en cualquier parte para cerrar)</h3></div><div class="imgnos1"><img src="img/noslight_1.jpg" width="1280px" height="740px"></div></div>
+    <div class="nostig"><div class="firstnos"><h3 class="nostigtext">AquaSyncs</h3><p class="nostigpar">AquaSyncs es un proyecto sobre el nado sincronizado con el objetivo de informar al usuario acerca de la historia de este deporte. Este sitio se presenta en forma de Timeline en la que se muestra la cronología del nado sincronizado.
+    Nosotros queremos lograr que los usuarios que naveguen por nuestro sitio, aprendan y se animen a conocer más sobre este deporte.</p><h3 class="advertext">(Presiona en cualquier parte para cerrar)</h3></div><div class="imgnos1"><img src="img/noslight_1.jpg" width="1280px" height="740px"></div></div>
     <div class="us">
         <i class="flecha fas fa-arrow-right"></i>
         <i style="display: none" class="flecha fas fa-arrow-left"></i>
@@ -526,7 +526,7 @@ require "php/conexion2.php";
            <div style="overflow: hidden; height: 250px;"><img class="card-img-top" src="img/cristian.jpg" alt="Card image cap"></div>
           <div class="card-body">
             <h5 class="card-title" style="color: black;">Cristian Marín</h5>
-            <p class="card-text" style="font-size: 20px; color: black;">Soy especial!</p>
+            <p class="card-text" style="font-size: 20px; color: black;">Si se puede imaginar, se puede programar!</p>
           </div>
         </div>
         <div class="card m-4" style="width: 18rem;">

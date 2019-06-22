@@ -3435,12 +3435,12 @@ font-family: 'Montserrat', sans-serif;
 /*----------------------------SCROLL------------------------*/
 /* width */
 ::-webkit-scrollbar {
-    width: 0px;
+    width: 7px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: white;
+    background: rgba(0,0,0,0);
     
 }
 
